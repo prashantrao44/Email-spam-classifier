@@ -8,7 +8,8 @@ from nltk.stem.porter import PorterStemmer
 
 
 
-nltk.download('stopwords')
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 ps = PorterStemmer()
 
 # Stopwords list ko loop se bahar cache/store kar liya
